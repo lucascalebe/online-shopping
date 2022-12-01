@@ -9,3 +9,13 @@ services:
       - "27017:27017"
     networks:
       - default
+
+  rabbitmq:
+    image: rabbitmq:management
+    expose:
+      - "5672"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    networks:
+      - default

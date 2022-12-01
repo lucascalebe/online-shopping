@@ -17,3 +17,13 @@ services:
       - './docker/db/data:/var/lib/mysql'
       - './docker/db/my.cnf:/etc/mysql/conf.d/my.cnf'
       - './docker/db/sql:/docker-entrypoint-initdb.d'
+
+  rabbitmq:
+    image: rabbitmq:management
+    expose:
+      - "5672"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    networks:
+      - default
