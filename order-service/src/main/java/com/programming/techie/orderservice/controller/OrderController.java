@@ -1,4 +1,4 @@
-package com.programming.techie.orderservice;
+package com.programming.techie.orderservice.controller;
 
 import com.programming.techie.orderservice.client.InventoryClient;
 import com.programming.techie.orderservice.dto.OrderDto;
